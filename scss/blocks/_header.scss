@@ -1,0 +1,85 @@
+.siteheader__container {
+  display: flex;
+  align-items: center;
+}
+
+.siteheader__left {
+  display: flex;
+  align-items: center;
+}
+
+.siteheader__left p {
+  max-width: 230px;
+  font-size: 14px;
+font-weight: 400;
+color: $text-color;
+}
+
+.btn--light {
+  display: flex;
+  max-width: 170px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px 20px;
+  color: #7fbd64;
+  border: 2px solid #7fbd64;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn--light::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("img/edit_(2).png");
+}
+
+.siteheader__scedule {
+  display: flex;
+  align-items: center;
+}
+
+.siteheader__scedule::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("img/clock.png");
+}
+
+.siteheader__right {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.siteheader_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.siteheader_contact a {
+  display: block;
+}
+
+.siteheader_contact a:nth-child(1) {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.siteheader_contact a:nth-child(1)::before {
+  width: 20px;
+  height: 20px;
+  display: block;
+  display: block;
+  content: "";
+  color: #000;
+}
+
+.siteheader__scedule p:nth-child(2) {
+  font-size: 18px;
+}
