@@ -1,23 +1,35 @@
 .siteheader__container {
   display: flex;
   align-items: center;
+  padding: 20px 15px;
+  position: relative;
 }
 
 .siteheader__left {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
+
 
 .siteheader__left p {
   max-width: 230px;
   font-size: 14px;
 font-weight: 400;
 color: $text-color;
+margin-left: 26px;
+}
+
+.siteheader__container .btn--light {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn--light {
   display: flex;
-  max-width: 170px;
+  align-items: center;
+  max-width: 180px;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -25,7 +37,7 @@ color: $text-color;
   color: #7fbd64;
   border: 2px solid #7fbd64;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -33,14 +45,22 @@ color: $text-color;
 .btn--light::before {
   content: "";
   display: block;
-  width: 30px;
+  width: 50px;
   height: 30px;
-  background-image: url("img/edit_(2).png");
+  background-image: url("../img/edit_(2).png");
+  background-size: cover;
+  margin-right: 10px;
 }
 
 .siteheader__scedule {
   display: flex;
   align-items: center;
+  color: #333;
+  margin-right: 70px;
+}
+
+.siteheader__scedule p {
+  margin: 0;
 }
 
 .siteheader__scedule::before {
@@ -48,13 +68,15 @@ color: $text-color;
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("img/clock.png");
+  background-image: url("../img/clock.png");
+  margin-right: 20px;
 }
 
 .siteheader__right {
   display: flex;
   align-items: center;
   font-weight: 400;
+  margin-left: auto;
 }
 
 .siteheader_contact {
@@ -66,20 +88,40 @@ color: $text-color;
   display: block;
 }
 
-.siteheader_contact a:nth-child(1) {
+.phone {
   font-weight: 700;
+  display: block;
   font-size: 23px;
+  color: #000;
+  text-decoration: none;
 }
 
-.siteheader_contact a:nth-child(1)::before {
+.siteheader__contact {
+  display: flex;
+  align-items: start;
+}
+
+.siteheader__contact::before {
   width: 20px;
   height: 20px;
   display: block;
   display: block;
   content: "";
-  color: #000;
+  background-image: url("../img/phone.png");
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.siteheader__contact a:nth-child(2) {
+  color: $text-color;
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
 }
 
 .siteheader__scedule p:nth-child(2) {
   font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 10px;
 }
